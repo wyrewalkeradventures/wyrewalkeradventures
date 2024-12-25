@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyre Walker Adventures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #20B2AA;
+            color: #333;
+        }
+        header {
+            background: #FF1493;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .marquee {
+            background: #FF1493;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 1.2em;
+        }
+        .marquee marquee {
+            font-weight: bold;
+        }
+        .nav-bar {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+        }
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+        .full-width-image {
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+        .full-width-image img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            display: block;
+            object-fit: cover;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            color: #4CAF50;
+        }
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .booking-form input, .booking-form select, .booking-form button {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .booking-form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background: #45a049;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        .gallery-item img {
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-item p {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .events {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .events ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .events li {
+            margin-bottom: 10px;
+        }
+        .contact-bar {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-bar .divider {
+            border-left: 2px solid white;
+            height: 30px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\njugi\OneDrive\Documents\adventure\logo.jpg" alt="Logo">
+        <h1>Wyre Walker Adventures</h1>
+    </header>
+
+    <div class="marquee">
+        <marquee behavior="scroll" direction="left">Welcome to Wyre Walker Adventures! Book your next thrilling hike or event today!</marquee>
+    </div>
+
+    <!-- Horizontal Navigation Bar -->
+    <div class="nav-bar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#events">Event</a>
+        <a href="#trip-search">Trip Search</a>
+        <a href="#holidays">Holidays</a>
+    </div>
+
+    <!-- Full-width Image Bar -->
+    <div class="full-width-image">
+        <img src="C:\Users\njugi\OneDrive\Documents\adventure\photo2-.jpg" alt="Adventure Banner">
+    </div>
+
+    <div class="container">
+        <!-- Booking Section -->
+        <div class="section" id="booking">
+            <h2>Book Your Adventure</h2>
+            <form class="booking-form">
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <select required>
+                    <option value="">Select Adventure</option>
+                    <option value="mt_kenya"> Gatundu Chidren Home</option>
+                    <option value="safari_trip">Nairobi Safari Park</option>
+                    <option value="lake_naivasha">Mt.Satima Aberdares</option>
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="section" id="gallery">
+            <h2>Adventure Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="C:\Users\njugi\OneDrive\Documents\adventure\Adventure 1.jpg" alt="Mt. Longonot">
+                    <p>Hiking</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\njugi\OneDrive\Documents\adventure\photo2.jpg" alt="Mt. Kenya">
+                    <p>Experience</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\njugi\OneDrive\Documents\adventure\photo3.jpg" alt="Safari Trip">
+                    <p>Trip</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\njugi\OneDrive\Documents\adventure\photo4.jpg" alt="Lake Naivasha">
+                    <p>View</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\njugi\OneDrive\Documents\adventure\photo6.jpg" alt="Hiking Adventure">
+                    <p>Adventure</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events Section -->
+        <div class="section" id="events">
+            <h2>Upcoming Events</h2>
+            <div class="events">
+                <ul>
+                    <li><strong>New Year Visit:</strong> Gatundu Childrens Home - January 04, 2025</li>
+                    <li><strong>Valentine's Day Special:</strong> Nairobi National Park - February 14, 2025</li>
+                    <li><strong>Mt.Satima Aberdares:</strong> Hike - August, 2025</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-bar">
+            <div onclick="copyPhoneNumber()">Contact: 0799572033</div>
+            <div class="divider"></div>
+            <div><a href="mailto:wyrewalkeradventures@gmail.com">Email: wyrewalkeradventures@gmail.com</a></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Wyre Walker Adventures. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyPhoneNumber() {
+            // Create a temporary input element to copy the phone number to clipboard
+            const phoneNumber = '0799572033';
+            const tempInput = document.createElement('input');
+            document.body.appendChild(tempInput);
+            tempInput.value = phoneNumber;
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Phone number copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
